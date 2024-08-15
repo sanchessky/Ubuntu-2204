@@ -1,0 +1,83 @@
+
+
+
+
+
+<h3>Redes Sociais</h3>
+<ul>
+    <li><a href="https://www.linkedin.com/in/thiagosanches07" target="_blank">Linkedin</a></li>
+    <li><a href="https://github.com/sanchessky" target="_blank">GitHub</a></li>
+    
+    
+    <h3>Meus Projetos</h3>
+    <ul>
+        <li><a href="http://192.168.15.40/thiago/" target="_blank">HTML</a></li>
+        <li><a href="http://192.168.15.40/thiago/teste.html" target="_blank">PHP</a></li>
+    </ul>
+
+
+
+
+
+
+
+
+CREATE USER 'newsite'@'localhost' IDENTIFIED BY '123@senac';
+GRANT ALL PRIVILEGES ON newsite.* TO 'newsite'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+wget https://wordpress.org/latest.tar.gz
+tar -xzf latest.tar.gz
+
+
+
+sudo cp -r wordpress/* /var/www/html/site/
+
+
+chown -R www-data:www-data /var/www/html/site
+
+
+sudo chmod -R 755 /var/www/html/site
+
+
+
+
+cd /var/www/html/site
+cp wp-config-sample.php wp-config.php
+
+
+
+
+
+sudo nano wp-config.php
+define('DB_NAME', 'newsite');
+define('DB_USER', 'newsite');
+define('DB_PASSWORD', '123@senac');
+define('DB_HOST', 'localhost');
+
+
+
+
+
+sudo nano /etc/apache2/sites-available/site.conf
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html/site
+    ServerName wssanchesdomain.com
+
+    <Directory /var/www/html/site>
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+sudo a2ensite site.conf
+sudo a2enmod rewrite
+
+sudo systemctl restart apache2
+
+
+
