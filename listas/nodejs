@@ -1,0 +1,42 @@
+const express = require('express');
+const app = express();
+const port = 3030;
+
+
+app.get('/', (req, res) => {
+    res.send(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Bem-vindo</title>
+        </head>
+        <body>
+          <img src="https://thumbs.dreamstime.com/b/logotipo-de-linux-136767231.jpg" style="width:150px;height:150px;">
+          <p>Meu novo projeto em Node.JS - Thiago Sanches</p>
+          <p>Meus Projetos:</p>
+          <ul>
+            <li><a href="http://192.168.15.40:3000">Node.js</a></li>
+            <li><a href="http://192.168.15.40/wp/">WordPress</a></li>
+            <li><a href="http://192.168.15.40/thiago/teste.html">PHP</a></li>
+            <li><a href="http://192.168.15.40/thiago/">HTML</a></li>
+          </ul>
+        </body>
+      </html>
+    `);
+  });
+
+  // Data e hora atuais
+  const now = new Date();
+  console.log('Data e hora atuais:', now);
+  
+  // Formatar a data e hora como uma string legível
+  console.log('Data e hora legível:', now.toString());
+  
+  // Formatar a data e hora em formato ISO 8601
+  console.log('Data e hora ISO:', now.toISOString());
+  
+
+  app.listen(port, () => {
+    console.log(`Aplicativo de exemplo ouvindo na porta ${3030}`);
+  });
+
