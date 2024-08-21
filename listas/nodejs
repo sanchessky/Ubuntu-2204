@@ -20,6 +20,21 @@ app.get('/', (req, res) => {
             <li><a href="http://10.26.44.222/thiago/thiago.php">PHP</a></li>
             <li><a href="http://10.26.44.222/thiago/index.html">HTML</a></li>
           </ul>
+        <h2>My First JavaScript</h2>
+
+        <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Clique Aqui.</button>
+
+    <p id="demo"></p>
+
+<h3>JavaScript</h3>
+
+<p id="demo">JavaScript.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Oi JavaScript!"'>Click Me!</button>
+
+
         </body>
       </html>
     `);
