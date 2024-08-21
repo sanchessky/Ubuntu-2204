@@ -15,10 +15,10 @@ app.get('/', (req, res) => {
           <p>Meu novo projeto em Node.JS - Thiago Sanches</p>
           <p>Meus Projetos:</p>
           <ul>
-            <li><a href="http://192.168.15.40:3000">Node.js</a></li>
-            <li><a href="http://192.168.15.40/wp/">WordPress</a></li>
-            <li><a href="http://192.168.15.40/thiago/teste.html">PHP</a></li>
-            <li><a href="http://192.168.15.40/thiago/">HTML</a></li>
+            <li><a href="http://10.26.44.222:3000">Node.js</a></li>
+            <li><a href="http://10.26.44.222/wp/">WordPress</a></li>
+            <li><a href="http://10.26.44.222/thiago/thiago.php">PHP</a></li>
+            <li><a href="http://10.26.44.222/thiago/index.html">HTML</a></li>
           </ul>
         </body>
       </html>
