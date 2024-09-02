@@ -1,3 +1,68 @@
+× mongod.service - MongoDB Database Server
+     Loaded: loaded (/lib/systemd/system/mongod.service; enabled; vendor preset: enabled)
+     Active: failed (Result: signal) since Mon 2024-09-02 09:58:14 -03; 23min ago
+       Docs: https://docs.mongodb.org/manual
+    Process: 692 ExecStart=/usr/bin/mongod --config /etc/mongod.conf (code=killed, signal=ILL)
+   Main PID: 692 (code=killed, signal=ILL)
+        CPU: 79ms
+
+set 02 09:58:02 wssanches.thiago.intra systemd[1]: Started MongoDB Database Server.
+set 02 09:58:14 wssanches.thiago.intra systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+set 02 09:58:14 wssanches.thiago.intra systemd[1]: mongod.service: Failed with result 'signal'.
+--------------------------------------------------------------------------------------------------------------------
+Sep  2 07:40:52 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:40:52 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:42:17 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:42:17 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:42:17 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:42:17 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:42:55 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:42:55 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:43:32 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:43:32 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:43:40 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:43:40 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:43:45 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:43:45 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:45:55 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:45:55 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:46:10 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:46:10 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:46:10 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:46:10 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 07:47:13 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 07:47:13 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 08:23:31 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 08:23:31 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 08:26:36 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 08:26:36 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+Sep  2 09:58:14 wssanches systemd[1]: mongod.service: Main process exited, code=killed, status=4/ILL
+Sep  2 09:58:14 wssanches systemd[1]: mongod.service: Failed with result 'signal'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
 processor       : 0
 vendor_id       : GenuineIntel
 cpu family      : 6
