@@ -9,13 +9,13 @@
 
 ls issue* (arquivo de configuração de tela de login no linux)´
 
-3-Realizar um backup do arquivo issue e remover o arquivo original issue
-cp issue issue.bpk
-rm issue
+## 3-Realizar um backup do arquivo issue e remover o arquivo original issue
+      cp issue issue.bpk
+      rm issue
 
-4-Realizar um backup e 
-cp linuxlogo.bkp
+## 4-Renoamer o arquivo linuxlogo 
+      cp linuxlogo.bkp issue
 
-5-Reniciar
-reboot
-shutdonw -h now
+## 5-Reniciar
+      reboot
+      shutdonw -h now
